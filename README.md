@@ -12,14 +12,14 @@ This is a Wallet Simple Demo project was built base RoR and ReactJs by Thai Do.
 
 **2. Setup PostgresDB:**
 
-**3. Open development credential by this key 47192c1dddd6154497bc2f472849544e and update some database configs as below:**
+**3. Open development credential file by this key 47192c1dddd6154497bc2f472849544e and update some database configs as below:**
 ```
 db:
- host: localhost
- name: wallet_dev
- username: wallet_dev
- password: wallet_dev
- port: 5432
+ host: <<changeme>>
+ name: <<changeme>>
+ username: <<changeme>>
+ password: <<changeme>>
+ port: <<changeme>>
 ```
 **4. Install dependencies:**
 
