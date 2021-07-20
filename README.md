@@ -12,7 +12,7 @@ This is a Wallet Simple Demo project was built base RoR and ReactJs by Thai Do.
 
 **2. Setup PostgresDB:**
 
-**3. Open development credential file by this key 47192c1dddd6154497bc2f472849544e and update some database configs as below:**
+**3. Create development.key file in config/credentials with this content 47192c1dddd6154497bc2f472849544e. Open development credential file and update some database configs as below:**
 ```
 db:
  host: <<changeme>>
@@ -25,10 +25,6 @@ db:
 
 ```
 bundle install
-```
-
-```
-rails db:setup
 ```
 
 ```
