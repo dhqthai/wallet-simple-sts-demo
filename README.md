@@ -11,15 +11,20 @@ This is a Wallet Simple Demo project was built base RoR and ReactJs by Thai Do.
 **1. Clone the source code to your local machine:**
 
 **2. Setup PostgresDB:**
+```
+create database <changeme>;
+create user <changeme> with password <changeme>;
+grant all privileges on database <changeme> to <changeme>;
+```
 
 **3. Create development.key file in config/credentials with this content 47192c1dddd6154497bc2f472849544e. Open development credential file and update some database configs as below:**
 ```
 db:
- host: <<changeme>>
- name: <<changeme>>
- username: <<changeme>>
- password: <<changeme>>
- port: <<changeme>>
+ host: <changeme>
+ name: <changeme>
+ username: <changeme>
+ password: <changeme>
+ port: <changeme>
 ```
 **4. Install dependencies:**
 
@@ -47,4 +52,12 @@ rails c
 **6. Access the webpage:**
 ```
 http://localhost:3000
+```
+
+**7. Some existing users:**
+```
+john@example.com/123456
+luke@example.com/123456
+steven@example.com/123456
+shaw@example.com/123456
 ```
