@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  walletable_id: 1
+  walletable_type: MyString
+  address_key: 
+
+two:
+  walletable_id: 1
+  walletable_type: MyString
+  address_key: 

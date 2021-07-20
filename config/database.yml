@@ -1,0 +1,24 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= (ENV.fetch("RAILS_MAX_THREADS") { 5 }) * (ENV.fetch("WEB_CONCURRENCY") { 1 }) %>
+
+development:
+  <<: *default
+  host: <%= Rails.application.credentials.db[:host] %>
+  database: <%= Rails.application.credentials.db[:schema] %>
+  username: <%= Rails.application.credentials.db[:username] %>
+  password: <%= Rails.application.credentials.db[:password] %>
+  port: <%= Rails.application.credentials.db[:port] %>
+
+test:
+  <<: *default
+  database: wallet_test
+
+production:
+  <<: *default
+  host: <%= Rails.application.credentials.db[:host] %>
+  database: <%= Rails.application.credentials.db[:schema] %>
+  username: <%= Rails.application.credentials.db[:username] %>
+  password: <%= Rails.application.credentials.db[:password] %>
+  port: <%= Rails.application.credentials.db[:port] %>
