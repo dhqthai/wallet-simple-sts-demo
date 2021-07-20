@@ -1,15 +1,27 @@
 ## Overview
-This is a Wallet Simple Demo project was built base RoR and ReactJs.
+This is a Wallet Simple Demo project was built base RoR and ReactJs by Thai Do.
 
 - ruby: "3.0.1"
 - rails: "~> 6.1.1"
 - antd: "^4.16.8"
+- pg: "1.2.3"
 
 ## Getting Started
 
 **1. Clone the source code to your local machine:**
 
-**2. Install dependencies:**
+**2. Setup PostgresDB:**
+
+**3. Open development credential by this key 47192c1dddd6154497bc2f472849544e and update some database configs as below:**
+```
+db:
+ host: localhost
+ name: wallet_dev
+ username: wallet_dev
+ password: wallet_dev
+ port: 5432
+```
+**4. Install dependencies:**
 
 ```
 bundle install
